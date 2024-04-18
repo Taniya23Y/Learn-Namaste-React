@@ -55,6 +55,6 @@ Before the next class, make sure to learn about Arrow Functions as they will be 
 
 - [Namaste JS season 2 Tutorial Playlist on YouTube](https://www.youtube.com/watch?v=78Homn79Qsk&list=PLlasXeu85E9eWOpw9jxHOQyGMRiBZ60aX&pp=iAQB)
 
-- [YouTube Video: Introduction to React](https://www.youtube.com/watch?v=IrHmpdORLu8)
+- [YouTube Video: Introduction to async and defer](https://www.youtube.com/watch?v=IrHmpdORLu8)
 
 
