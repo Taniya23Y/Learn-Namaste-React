@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Taniya23Y/Learn-Namaste-React/issues"
   },
-  "homepage": "https://github.com/Taniya23Y/Learn-Namaste-React#readme"
+  "homepage": "https://github.com/Taniya23Y/Learn-Namaste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
 }
