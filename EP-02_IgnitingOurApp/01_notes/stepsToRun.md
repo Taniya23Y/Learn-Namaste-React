@@ -155,7 +155,7 @@ Server running at http://localhost:1234
 
 ```
 
-#### (8) npm parcel index.html
+#### (8) npx parcel index.html
 <ul>
 <li>Run the above command again</li>
 </ul>
@@ -225,7 +225,7 @@ import ReactDOM from 'react-dom/client";
 
 ```
 
-#### (9) npm parcel Build index.html
+#### (9) npx parcel Build index.html
 <li>Before run the above command delete dist folder and then run it. it again regenerate dist folder with three main files(index.html, index.css and index.js)</li>
 
 <li>But here we are coding as development(npm parcel index.html), the above npm parcel Build index.html is for production.</li>
