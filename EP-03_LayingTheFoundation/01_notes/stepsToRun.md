@@ -10,6 +10,7 @@
   },
 
 ```
-how to start - run this commands  on your terminal:
+how to start - run this commands on your terminal:
 `npm run start` or `npm start`
 
+In this Episode, we will be talking about JSX, React components-(functional component) and much more!
