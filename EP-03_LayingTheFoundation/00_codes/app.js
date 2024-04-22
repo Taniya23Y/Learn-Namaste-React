@@ -86,20 +86,50 @@ const Title = () => (
 );
 */
 
-const Title = (
+// functional component
+/*
+const Title = () => (
   <h1 className="head" tabIndex="1">
+    Namaste React using JSX
+  </h1>
+);
+*/
+
+// How can you put react element inside in reactElement
+const elem = <span>React Element </span>;
+
+
+// React Element
+const title = (
+  <h1 className="head" tabIndex="1">
+   {/* How can you put react element inside in reactElement */}
+   {elem}
     Namaste React using JSX
   </h1>
 );
 
 const number = 10000;
+// const data = api.getData();
 
 const HeadingComponent2 = () => (
   <div id="container2">
-    // super power of JSX in {} you can write any JavaScript code inside curly
-    braces
+    {/* super power of JSX in {} you can write any JavaScript code inside curly braces */}
+    {/* <Title /> */}
+    {/* <Title></Title> */}
+    {/* {Title()} */}
+  
     {number}
-    <Title />
+    <h2>{number}</h2>
+
+    {/* you can inject any  js code inside jsx by {} */}
+    <h2>{100 + 200}</h2>
+    <h2>{console.log("hello")}</h2>
+
+    {/* {data}; /* this will print the response from server */ }
+
+
+    {/* React Element can be injected in component by curly braces: {title} */}
+    {title}
     <h1 className="heading2">Namaste React Functional Component 🪄</h1>
   </div>
 );
