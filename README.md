@@ -6,7 +6,7 @@ Welcome to the Namaste React Web Series, where I embark on an exciting journey t
 
 ## 📋 Important Guidelines - Namaste React
 
-## 🎬 Episode-01 | Inception
+## 🎬 [Episode-01 | Inception](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-01_Inception)
 
 **Introduction to foundational tools and frameworks in web development.**
 
