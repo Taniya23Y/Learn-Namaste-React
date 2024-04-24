@@ -15,7 +15,7 @@ Welcome to the Namaste React Web Series, where I embark on an exciting journey t
 - Hello world in HTML/JS
 - CDN, React Hello World
 
-## 🔥 Episode-02 | Igniting our App
+## 🔥 [Episode-02 | Igniting our App](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-02_IgnitingOurApp)
 
 **Dive into essential package managers and module bundlers for React projects.**
 
@@ -24,7 +24,7 @@ Welcome to the Namaste React Web Series, where I embark on an exciting journey t
 - Node modules
 - React app file structure
 
-## 🏗️ Episode-03 | Laying the foundation
+## 🏗️ [Episode-03 | Laying the foundation](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-03_LayingTheFoundation)
 
 **Understanding JSX, React components, and their compositions.**
 
@@ -32,7 +32,7 @@ Welcome to the Namaste React Web Series, where I embark on an exciting journey t
 - JSX, React components
 - Class-based vs Functional components
 
-## 💻 Episode-04 | Talk is Cheap, Show Me the Code
+## 💻 [Episode-04 | Talk is Cheap, Show Me the Code](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-04_TalkInCheap_ShowMeTheCode)
 
 **Implementing React's core features, managing state, and working with UI data.**
 
@@ -41,7 +41,7 @@ Welcome to the Namaste React Web Series, where I embark on an exciting journey t
 - props/state
 - function mapping
 
-## ⚛️ Episode-05 | Let's Get Hooked
+## ⚛️ [Episode-05 | Let's Get Hooked](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-05_LetsGetHooked)
 
 **Exploring React Hooks and understanding their importance.**
 
@@ -50,7 +50,7 @@ Welcome to the Namaste React Web Series, where I embark on an exciting journey t
 - Import/export
 - React Hooks (useState)
 
-## 🌍 Episode-06 | Exploring the World
+## 🌍 [Episode-06 | Exploring the World](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-06_ExploringTheWorld)
 
 **Architecture insights, useEffect hook, and working with APIs.**
 
