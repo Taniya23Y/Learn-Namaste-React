@@ -59,7 +59,7 @@ Welcome to the Namaste React Web Series, where I embark on an exciting journey t
 - Conditional Rendering
 - API usage
 
-## 🛠️ Episode-6.1 | Swiggy API Issue Resolved
+## 🛠️ [Episode-6.1 | Swiggy API Issue Resolved](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-06.1_SwiggyAPI_IssueResolved)
 
 This folder solves all the issues related to the Swiggy API, which we are using in our project.
 
