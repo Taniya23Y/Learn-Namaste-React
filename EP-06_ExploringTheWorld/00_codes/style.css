@@ -68,6 +68,7 @@ body {
 }
 
 .filter {
+  display: flex;
   padding: 10px;
 }
 
@@ -87,7 +88,7 @@ body {
 .resCards {
   padding: 10px 20px;
   width: 250px;
-  height: 320px;
+  height: 350px;
 }
 
 .resCards > .img-resCard {
@@ -111,4 +112,21 @@ body {
   margin-top: 50px;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-cards {
+  width: 250px;
+  height: 350px;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+}
+
+.login-btn {
+  padding: 0 20px;
+  cursor: pointer;
 }

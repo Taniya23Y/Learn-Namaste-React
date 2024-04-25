@@ -19,7 +19,7 @@ const RestaurantCard = (props) => {
       <img
         className="img-resCard"
         alt="res-logo"
-        src={CDN_URL + resData.data.cloudinaryImageId}
+        src={CDN_URL + cloudinaryImageId}
       />
 
       <h3>{name}</h3>

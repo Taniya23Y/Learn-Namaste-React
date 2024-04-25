@@ -7,3 +7,7 @@ export const LOGO_URL =
 
 export const CART_URL =
   "https://img.freepik.com/free-photo/minimal-shopping-cart-shopping-concept-orange-background-3d-rendering_56104-1396.jpg?t=st=1713776529~exp=1713780129~hmac=98dc42db70377b9c466ed6524c9d413bb9d4239390308743c93699a77e7f9cb5&w=1060";
+
+// Swiggy API to get Restaurant data
+export const swiggy_api_URL =
+  "https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.25470&lng=77.39370&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
