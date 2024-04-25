@@ -63,7 +63,7 @@ Welcome to the Namaste React Web Series, where I embark on an exciting journey t
 
 This folder solves all the issues related to the Swiggy API, which we are using in our project.
 
-## 🛠️ Episode-6.2 | CORS Plugin Issue solved
+## 🛠️ [Episode-6.2 | CORS Plugin Issue solved](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-06.2_CORS_Plugin_IssueResolved)
 
 In this folder, all the issues, that the students were facing because of CORS, have been resolved.
 
