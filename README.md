@@ -67,7 +67,7 @@ This folder solves all the issues related to the Swiggy API, which we are using 
 
 In this folder, all the issues, that the students were facing because of CORS, have been resolved.
 
-## 🗺️ Episode-07 | Finding the Path
+## 🗺️ [Episode-07 | Finding the Path](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-07_FindingThePath)
 
 **Mastering React Router for smooth navigation and routing.**
 
