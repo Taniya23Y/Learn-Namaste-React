@@ -1,17 +1,18 @@
 import RestaurantCard from "./RestaurantCard";
-import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { useState, useEffect } from "react";
 
 // AppBody
 const Body = () => {
   // local state Variable - Super powerful Variable(Hooks = useState)
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
+  const [listOfRestaurantForSearch, setListOfRestaurantForSearch] = useState(
+    []
+  );
 
   // Never create useState outside of your components. It will not work.
   // And never create a State variables inside a if-else, for loop and function- this will create inconsistency in project.
   const [searchText, setSearchText] = useState("");
-
-  const [filteredRestaurant, setFilteredRestaurant] = useState([]);
 
   // Whenever state variable updates, react triggers a reconciliation cycle(re-renders the components).
   console.log("Body Rendered");
@@ -29,14 +30,15 @@ const Body = () => {
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.25470&lng=77.39370&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
+
     const json = await data.json();
-    console.log(json);
+    // console.log(json);
 
     setListOfRestaurants(
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[1]?.card.card?.gridElements?.infoWithStyle?.restaurants
     );
-    setFilteredRestaurant(
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    setListOfRestaurantForSearch(
+      json?.data?.cards[1]?.card.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
 
@@ -62,13 +64,14 @@ const Body = () => {
             onClick={() => {
               // filter the restaurant cards and update the UI
               // searchText
-              console.log(searchText);
+              // console.log(searchText);
 
-              const filteredRestaurant = listOfRestaurants.filter((res) =>
-                res.info.name.toLowerCase().includes(searchText.toLowerCase())
+              const filteredRestaurant = listOfRestaurantForSearch.filter(
+                (res) =>
+                  res.info.name.toLowerCase().includes(searchText.toLowerCase())
               );
 
-              setFilteredRestaurant(filteredRestaurant);
+              setListOfRestaurants(filteredRestaurant);
             }}
           >
             Search
@@ -87,7 +90,7 @@ const Body = () => {
         </button>
       </div>
       <div className="RestaurantConatiner">
-        {filteredRestaurant.map((restaurant) => (
+        {listOfRestaurants.map((restaurant) => (
           <RestaurantCard key={restaurant.info.id} resData={restaurant} />
         ))}
       </div>

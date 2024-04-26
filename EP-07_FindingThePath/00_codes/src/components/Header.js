@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // Header
 const Header = () => {
   const [btnNameReact, setBtnNameReact] = new useState("Login");
-  console.log("Header rendered");
+  // console.log("Header rendered");
 
   useEffect(() => {
     // when is this useEffect called ? it basically is called after every rendered of a components.
@@ -13,7 +13,7 @@ const Header = () => {
     // if no dependency array => useEffect is called on every render
     // if dependency array is empty = [] => useEffect is called on initial render(just once).
     // if dependency array is btnNameReact = [btnNameReact] => useEffect is called everytime btnNameReact is updated.
-    console.log("useEffect rendered");
+    // console.log("useEffect rendered");
   }, [btnNameReact]);
 
   return (

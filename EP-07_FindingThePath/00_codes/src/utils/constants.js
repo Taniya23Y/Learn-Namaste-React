@@ -11,3 +11,9 @@ export const CART_URL =
 // Swiggy API to get Restaurant data
 export const swiggy_api_URL =
   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.25470&lng=77.39370&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+
+export const Menu_URL =
+  "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.71700&lng=75.83370&restaurantId=536863&isMenuUx4=true&submitAction=ENTER";
+
+export const Menu_URL_1 =
+  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.25470&lng=77.39370&restaurantId=";
