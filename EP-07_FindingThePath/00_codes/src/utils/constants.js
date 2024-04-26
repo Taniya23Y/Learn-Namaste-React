@@ -15,5 +15,8 @@ export const swiggy_api_URL =
 export const Menu_URL =
   "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.71700&lng=75.83370&restaurantId=536863&isMenuUx4=true&submitAction=ENTER";
 
-export const Menu_URL_1 =
-  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.25470&lng=77.39370&restaurantId=";
+export const Menu_API =
+  "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.71700&lng=75.83370&restaurantId=";
+
+export const Menu_API_Real_Api =
+  "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.71700&lng=75.83370&restaurantId=148404&isMenuUx4=true&submitAction=ENTER";
