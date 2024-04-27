@@ -4,16 +4,15 @@
 import React from "react";
 
 class UserClass extends React.Component {
-  // Then it has a renders method and this render method return a piece of jsx
-
   constructor(props) {
     super(props);
+
     this.state = {
-      count: 0,
-      // count2: 2,
+      userInfo: {
+        name: "DummyName",
+        location: "Default",
+      },
     };
-    // first the constructor is called then render is called
-    console.log(this.props.name + " child constructor");
   }
 
   /**
@@ -21,50 +20,37 @@ class UserClass extends React.Component {
     * componentDidMount is used to make a api call
    */
 
-  componentDidMount() {
-    console.log(this.props.name + " child component Did Mount");
+  async componentDidMount() {
+    const data = await fetch("https://api.github.com/users/Taniya23Y");
+    const json = await data.json();
+    console.log(json);
 
-    // API call
+    this.setState({
+      userInfo: json,
+    });
+  }
+
+  // The componentDidUpdate() method is a React lifecycle method that is invoked immediately after a component's updates are flushed to the DOM.
+  // It is invoked immediately after updating occurs and not before. It receives two arguments: the previous props and the previous state.
+  componentDidUpdate() {
+    console.log("component Did Update called");
+  }
+
+  // unmounting refers to the process of removing a component from the DOM. This is the opposite of mounting, which is the process of adding a component to the DOM.
+  // When a component is unmounted, it is no longer part of the app's UI, and its resources are cleaned up to prevent memory leaks.
+  componentWillUnmount() {
+    console.log("component Will Unmount called");
   }
 
   render() {
     // destructuring
-    const { name, location } = this.props;
-    const { count } = this.state;
-    // const { count2 } = this.state;
-    console.log(this.props.name + "child render");
+    const { name, location, avatar_url } = this.state.userInfo;
+    // debugger;
 
     return (
       <div className="user-card">
-        {/* <h2>Name: {this.props.name}</h2> */}
-        <h1>count = {count}</h1>
-        {/* <h1>count2 = {count2}</h1> */}
-        <button
-          onClick={() => {
-            // Never update state variables directly never ever do this.
-            // this.state.count = this.state.count++;
-
-            this.setState({
-              count: this.state.count + 1,
-            });
-          }}
-        >
-          Count Increase
-        </button>
-        <button
-          onClick={() => {
-            // Never update state variables directly never ever do this.
-            // this.state.count = this.state.count--;
-
-            this.setState({
-              count: this.state.count - 1,
-            });
-          }}
-        >
-          Count Decrease
-        </button>
+        <img src={avatar_url} alt="" />
         <h2>Name: {name}</h2>
-        {/* <h3>Location: {this.props.location}</h3> */}
         <h3>Location: {location}</h3>
         <h4>Contact Info: @FairyTaniya</h4>
       </div>
@@ -73,3 +59,25 @@ class UserClass extends React.Component {
 }
 
 export default UserClass;
+
+/***
+ *  ---- Mounting life cycle ---- => Mounting => constructor => Render => React Updates DOM and refs => componentDidMount -> Updating
+ *
+ * constructor (dummy)
+ * Render (dummy)
+ *     <html Dummy>
+ * Component Did Mount
+ *      <API Call>
+ *      <this.setState> state variable is updated
+ *
+ *
+ * //* once the mounting cycle is finished then setState called, it triggers the reconciliation process and updates the cycle
+ * ----- update cycle begins ------ => Updating -> Render -> React updates DOM and refs -> componentDidUpdate => Unmounting
+ *
+ *     render (API data)
+ *     <HTML (new API data)>
+ *     componentDidUpdate
+ *
+ * ----- unmounting cycle begins and ends ------
+ *
+ */
