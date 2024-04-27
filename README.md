@@ -76,7 +76,7 @@ In this folder, all the issues, that the students were facing because of CORS, h
 - Dynamic Routing
 - Outlet Component
 
-## 🎩 Episode-08 | Let's Get Classy
+## 🎩 [Episode-08 | Let's Get Classy](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-08_LetsGetClassy)
 
 **Learning Class-based components and their lifecycles.**
 
