@@ -84,7 +84,7 @@ In this folder, all the issues, that the students were facing because of CORS, h
 - Class-based components
 - Lifecycle methods
 
-## 🚀 Episode -09 | Optimizing our App
+## 🚀 [Episode -09 | Optimizing our App](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-09_OptimizingOurApp)
 
 **Advanced optimization techniques including Custom Hooks.**
 
