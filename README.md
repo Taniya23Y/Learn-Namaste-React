@@ -93,7 +93,7 @@ In this folder, all the issues, that the students were facing because of CORS, h
 - Optimization
 - Suspense Component
 
-## 🎨 Episode-10 | Jo Dikhta Hai, Vo Bikta Hai
+## 🎨 [Episode-10 | Jo Dikhta Hai, Vo Bikta Hai](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-10_JoDikhtaHai_VoBiktaHai)
 
 **Introduction to Tailwind CSS for responsive UI designs.**
 
