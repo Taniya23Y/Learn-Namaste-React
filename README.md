@@ -100,7 +100,7 @@ In this folder, all the issues, that the students were facing because of CORS, h
 **Topics Covered:**
 - Tailwind CSS introduction for UI design
 
-## 🛢️ Episode-11 | Data is the New Oil
+## 🛢️ [Episode-11 | Data is the New Oil](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-11_DataIsTheNewOil) 
 
 **Handling data flow and DevTools exploration.**
 
