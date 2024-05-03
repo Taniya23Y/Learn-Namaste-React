@@ -84,7 +84,7 @@ In this folder, all the issues, that the students were facing because of CORS, h
 - Class-based components
 - Lifecycle methods
 
-## 🚀 Episode -09 | Optimizing our App
+## 🚀 [Episode -09 | Optimizing our App](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-09_OptimizingOurApp)
 
 **Advanced optimization techniques including Custom Hooks.**
 
@@ -93,14 +93,14 @@ In this folder, all the issues, that the students were facing because of CORS, h
 - Optimization
 - Suspense Component
 
-## 🎨 Episode-10 | Jo Dikhta Hai, Vo Bikta Hai
+## 🎨 [Episode-10 | Jo Dikhta Hai, Vo Bikta Hai](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-10_JoDikhtaHai_VoBiktaHai)
 
 **Introduction to Tailwind CSS for responsive UI designs.**
 
 **Topics Covered:**
 - Tailwind CSS introduction for UI design
 
-## 🛢️ Episode-11 | Data is the New Oil
+## 🛢️ //[Episode-11 | Data is the New Oil](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-11_DataIsTheNewOil) 
 
 **Handling data flow and DevTools exploration.**
 
