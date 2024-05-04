@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import { CART_URL, LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 // Header
 const Header = () => {
   const [btnNameReact, setBtnNameReact] = new useState("Login");
   // console.log("Header rendered");
+
+  const onlineStatus = useOnlineStatus();
 
   useEffect(() => {
     // when is this useEffect called ? it basically is called after every rendered of a components.
@@ -26,6 +29,9 @@ const Header = () => {
       {/* nav-items  */}
       <div className="nav-items">
         <ul>
+          <li className="no-underline">
+            Online status:{onlineStatus ? "✅" : "🔴"}
+          </li>
           <li>
             <Link to="/">Home</Link>
           </li>
