@@ -30,7 +30,7 @@ const Header = () => {
       <div className="nav-items">
         <ul>
           <li className="no-underline">
-            Online status:{onlineStatus ? "✅" : "🔴"}
+            Online status:{onlineStatus ? "🟢" : "🔴"}
           </li>
           <li>
             <Link to="/">Home</Link>
