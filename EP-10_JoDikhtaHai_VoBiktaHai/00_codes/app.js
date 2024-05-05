@@ -2,11 +2,10 @@ import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
-// import About from "./src/components/About";
 import Contact from "./src/components/Contact";
 import Error from "./src/components/Error";
 import RestaurantMenu from "./src/components/RestaurantMenu";
-// import Grocery from "./src/components/Grocery";
+import Footer from "./src/components/Footer";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 // Chunking
@@ -19,17 +18,6 @@ const About = lazy(() => import("./src/components/About"));
 const Grocery = lazy(() => import("./src/components/Grocery"));
 
 const currYear = new Date().getFullYear();
-
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <p>
-        Copyright &copy; {currYear}, Made with 💗 by{" "}
-        <strong>Taniya Yadav</strong>
-      </p>
-    </footer>
-  );
-};
 
 const AppLayout = () => {
   return (
@@ -75,6 +63,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurants/:resId",
         element: <RestaurantMenu />,
+      },
+      {
+        path: "/footer",
+        element: <Footer />,
       },
     ],
     errorElement: <Error />,
