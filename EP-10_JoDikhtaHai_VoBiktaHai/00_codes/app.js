@@ -33,10 +33,11 @@ const Footer = () => {
 
 const AppLayout = () => {
   return (
-    <div className="app">
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <Outlet />
-
+      <main className="flex-grow">
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );
