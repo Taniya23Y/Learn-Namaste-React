@@ -42,6 +42,9 @@ const Header = () => {
             <Link to="/contact">Contact us</Link>
           </li>
           <li>
+            <Link to="/grocery">Grocery </Link>
+          </li>
+          <li>
             <img className="cart-img" src={CART_URL} alt="cart" />
           </li>
           <li>
