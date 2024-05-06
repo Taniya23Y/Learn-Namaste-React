@@ -44,4 +44,22 @@ const RestaurantCard = (props) => {
   );
 };
 
+// Higher order components
+
+// it  takes input is the restaurantCard and th output of this restaurant cards. = restaurant card promoted
+// input - restaurantCard => promotesRestaurantCard
+
+export const IsOpenLabel = (RestaurantCard) => {
+  return (props) => {
+    return (
+      <div className="relative">
+        <p className="absolute z-10 -top-2 -left-2 rounded-md p-2 px-4 bg-zinc-900 text-white text-xs">
+          Open
+        </p>
+        <RestaurantCard {...props} />
+      </div>
+    );
+  };
+};
+
 export default RestaurantCard;

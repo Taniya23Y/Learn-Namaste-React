@@ -1,8 +1,9 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { IsOpenLabel } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import { FaSearch } from "react-icons/fa";
 
 // AppBody
 const Body = () => {
@@ -11,6 +12,10 @@ const Body = () => {
     []
   );
   const [searchText, setSearchText] = useState("");
+
+  const RestaurantCardIsOpen = IsOpenLabel(RestaurantCard);
+
+  console.log("body Rendered", listOfRestaurants);
 
   useEffect(() => {
     fetchData();
@@ -61,19 +66,20 @@ const Body = () => {
 
   return (
     <div className="AppBody">
-      <div className="filter bg-gray-200 py-4 px-8 flex flex-col md:flex-row justify-between items-center">
-        <div className="search mb-4 md:mb-0">
+      <div className="filter bg-gray-200 py-4 px-8 flex flex-col md:flex-row justify-center items-center gap-2">
+        <div className="search mb-4 md:mb-0 flex items-center ">
           <input
             type="text"
-            className="search-box p-2 border border-gray-300 rounded"
+            className="search-box p-3 border border-gray-300 rounded-lg"
             placeholder="Search restaurant..."
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />
           <button
-            className="search-btn bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded ml-2"
+            className="search-btn bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded ml-2 flex justify-center items-center"
             onClick={handleSearch}
           >
+            <FaSearch className="search-icon mr-2 text-black font-thin" />
             Search
           </button>
         </div>
@@ -85,11 +91,20 @@ const Body = () => {
         </button>
       </div>
       <div className="RestaurantContainer px-4 py-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
-        {listOfRestaurants.map((restaurant) => (
+        {listOfRestaurants.map((restaurant, index) => (
           <Link
             key={restaurant.info.id}
             to={"/restaurants/" + restaurant.info.id}
           >
+            {/* Write some logic for isOpen. If a restaurant is isOpen add a isOpen label to it.   */}
+            {
+              /**if the restaurant is opened then add a opened label to it */
+              restaurant.info.isOpen ? (
+                <RestaurantCardIsOpen resData={restaurant} />
+              ) : (
+                <RestaurantCard resData={restaurant} />
+              )
+            }
             <RestaurantCard resData={restaurant} />
           </Link>
         ))}
