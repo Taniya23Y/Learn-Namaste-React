@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { CART_URL, LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
+import { PiShoppingCartSimpleFill } from "react-icons/pi";
+import { BiSolidLogInCircle } from "react-icons/bi";
 import useOnlineStatus from "../utils/useOnlineStatus";
 
 // Header
@@ -44,17 +46,19 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <img className="h-6" src={CART_URL} alt="cart" />
+          <PiShoppingCartSimpleFill className="text-center font-bold text-black cursor-pointer" />
+          {/* <img className="h-6" src={CART_URL} alt="cart" /> */}
         </li>
         <li>
           <button
-            className="bg-black hover:bg-gray-700 text-white px-3 py-1 rounded"
+            className="bg-black hover:bg-gray-700 text-white px-3 py-1 rounded flex justify-center items-center"
             onClick={() => {
               setBtnNameReact((prev) =>
                 prev === "Login" ? "Logout" : "Login"
               );
             }}
           >
+            <BiSolidLogInCircle className="text-white cursor-pointer mr-1" />
             {btnNameReact}
           </button>
         </li>

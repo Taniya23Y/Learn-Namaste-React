@@ -1,11 +1,18 @@
 import { LOGO_URL } from "../utils/constants";
+import { MdMarkEmailRead } from "react-icons/md";
+import { IoIosContact } from "react-icons/io";
+import { MdPlace } from "react-icons/md";
+import { FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   const currYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-yellow-500 text-gray-900 py-8">
-      <div className="container px-8 mx-auto flex flex-col md:flex-row justify-between items-center">
+    <footer className="bg-yellow-500 text-gray-900 py-8  ">
+      <div className="container px-8 mx-auto flex flex-col md:flex-row justify-between items-center ">
         <div className="text-center md:text-left">
           <div className="flex items-center mb-4 md:mb-0">
             <img className="h-10 mr-4" src={LOGO_URL} alt="logo-foodLogo" />
@@ -13,14 +20,14 @@ const Footer = () => {
           </div>
           <p className="text-sm mt-2">Bringing flavor to your doorstep!</p>
           <div className="flex flex-col justify-center items-center gap-2">
-            <h3 className="hover:text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-110">
-              📩 Email
+            <h3 className="hover:text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-110 flex justify-center items-center gap-2">
+              <MdMarkEmailRead /> Email
             </h3>
-            <h3 className="hover:text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-110">
-              ☎️ Contact us
+            <h3 className="hover:text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-110 flex justify-center items-center gap-2">
+              <IoIosContact /> Contact us
             </h3>
-            <h3 className="hover:text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-110">
-              🗺️ Avenue
+            <h3 className="hover:text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-110 flex justify-center items-center gap-2">
+              <MdPlace /> Avenue
             </h3>
           </div>
         </div>
@@ -85,16 +92,20 @@ const Footer = () => {
           <div className="flex flex-col items-center mb-4 md:mb-0">
             <span className="text-black text-xl font-bold">Socials</span>
             <div className="flex flex-col justify-center items-center gap-2">
-              <h2 className="hover:text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-110">
+              <h2 className="hover:text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-110 flex justify-center items-center gap-2">
+                <FaFacebook />
                 Facebook
               </h2>
-              <h2 className="hover:text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-110">
+              <h2 className="hover:text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-110 flex justify-center items-center gap-2">
+                <FaInstagram />
                 Instagram
               </h2>
-              <h2 className="hover:text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-110">
+              <h2 className="hover:text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-110 flex justify-center items-center gap-2">
+                <FaLinkedin />
                 LinkedIn
               </h2>
-              <h2 className="hover:text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-110">
+              <h2 className="hover:text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-110 flex justify-center items-center gap-2">
+                <FaYoutube />
                 Youtube
               </h2>
             </div>

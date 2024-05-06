@@ -1,39 +1,55 @@
-import { useEffect, useState } from "react";
-import { useRouteError } from "react-router-dom";
+import { useState } from "react";
+import Shimmer from "./Shimmer";
+import { useParams } from "react-router-dom";
+import useRestaurantMenu from "../utils/useRestaurantMenu";
+import RestaurantCategory from "./RestaurantCategory";
 
-const Error = () => {
-  const err = useRouteError();
-  const [animationClass, setAnimationClass] = useState("");
+const RestaurantMenu = () => {
+  const [showIndex, setShowIndex] = new useState(0);
+  const { resId } = useParams();
 
-  useEffect(() => {
-    // Add animation class after component mounts
-    setAnimationClass("animate-bounce");
+  const resInfo = useRestaurantMenu(resId);
 
-    // Clear animation class after 2 seconds
-    const timeout = setTimeout(() => {
-      setAnimationClass("");
-    }, 2000);
+  if (resInfo === null) return <Shimmer />;
 
-    // Clear the timeout when the component unmounts
-    return () => clearTimeout(timeout);
-  }, []);
+  const { name, cuisines, costForTwoMessage } =
+    resInfo?.data?.cards[2]?.card?.card?.info;
+
+  const { itemCards } =
+    resInfo?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[5]?.card
+      ?.card;
+
+  console.log(
+    resInfo?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards
+  );
+
+  const categories =
+    resInfo?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+      (c) =>
+        c?.card?.["card"]?.["@type"] ===
+        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+    );
+  console.log(categories);
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gradient-to-br from-pink-500 to-purple-500">
-      <div className={`bg-white rounded-lg shadow-md p-8 ${animationClass}`}>
-        <h1 className="text-4xl font-bold text-pink-500 mb-4">Uh-oh!</h1>
-        <h2 className="text-2xl font-semibold text-purple-800 mb-2">
-          Something went wrong...
-        </h2>
-        <h3 className="text-lg text-gray-600 mb-4">
-          Error {err.status}: {err.statusText}
-        </h3>
-        <p className="text-gray-700">
-          Don't worry, we're working on fixing it!
+    <div className="flex justify-center items-center h-full my-4">
+      <div>
+        <h1 className="menu font-bold my-10 text-2xl">{name}</h1>
+        <p className="text-lg font-bold">
+          {cuisines.join(", ")} - {costForTwoMessage}
         </p>
+        <h2>
+          {/* Categories accordions */}
+          {categories.map((category) => (
+            <RestaurantCategory
+              key={category.card.card.title}
+              data={category?.card?.card}
+            />
+          ))}
+        </h2>
       </div>
     </div>
   );
 };
 
-export default Error;
+export default RestaurantMenu;
