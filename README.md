@@ -109,7 +109,7 @@ In this folder, all the issues, that the students were facing because of CORS, h
 - Controlled vs Uncontrolled Components
 - DevTools
 
-## 🏪 Episode-12 | Let's Build Our Store
+## 🏪 [Episode-12 | Let's Build Our Store](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-12_LetsBuildOurStore)
 
 **Implementing Redux toolkit for state management.**
 
