@@ -2,38 +2,35 @@ import { CDN_URL } from "../utils/constants";
 
 const ItemList = ({ items }) => {
   return (
-    <div className="flex  flex-col justify-between items-center p-4 my-2 rounded-md bg-gray-50 select-none">
+    <div>
       {items.map((item) => (
         <div
-          key={item.card.info.id}
-          className="p-2 m-2 border-gray-200 border-b-2 text-left flex justify-between relative"
+          key={item?.card?.info?.id}
+          className="p-8 m-2 border-b-2 border-gray-200 text-left flex justify-between"
         >
-          <div className="w-9/12 space-y-2">
-            <div className="text-base font-semibold">
-              <span className="text-lg font-semibold">
-                {item.card.info.name}
-              </span>
-            </div>
-            <p className="text-xs hidden md:block">
-              {item.card.info.description}
+          <div className="py-2 w-8/12">
+            <span className="py-2 font-semibold">{item.card.info.name}</span>
+            <p className="text-xs py-2 text-gray-500 text-left font-medium">
+              {item?.card?.info?.description}
             </p>
-            <button className="bg-yellow-500 text-white rounded-lg border-white px-4">
-              <span className="text-xs font-semibold">
-                - ₹
-                {item.card.info.price
-                  ? item.card.info.price / 100
-                  : item.card.info.defaultPrice / 100}
+            <button className="bg-black text-white rounded border-white px-4">
+              <span className="text-xs font-semibold text-center">
+                ₹
+                {item?.card?.info?.price
+                  ? item?.card?.info?.price / 100
+                  : item?.card?.info?.defaultPrice / 100}
               </span>
             </button>
           </div>
-          <div className="w-3/12 relative">
+          <div className="w-4/12 relative">
             <img
-              src={CDN_URL + item.card.info.imageId}
+              src={CDN_URL + item?.card?.info?.imageId}
               alt="image"
               className="w-full h-32 object-cover rounded-md"
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-80 flex justify-center items-center">
-              <button className="bg-orange-500 text-white font-bold p-2 rounded-md shadow-md hover:bg-orange-600 cursor-pointer">
+            <div className="absolute bottom-0 left-0 right-0 bg-gray bg-opacity-80 flex justify-center items-center">
+              {/* <button className=" bg-white hover:bg-orange-500 text-black font-bold p-2 rounded-md shadow-md  cursor-pointer"> */}
+              <button className=" bg-white text-orange-500 hover:bg-orange-500 hover:text-white font-bold p-2 px-6 rounded-md absolute shadow-md left-[50%] -bottom-5 -translate-x-[50%]">
                 ADD +
               </button>
             </div>
