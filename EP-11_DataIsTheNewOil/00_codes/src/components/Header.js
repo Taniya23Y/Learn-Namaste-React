@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { CART_URL, LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
 import { BiSolidLogInCircle } from "react-icons/bi";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 // Header
 const Header = () => {
@@ -13,6 +14,9 @@ const Header = () => {
   useEffect(() => {
     // You can put any side effects here
   }, [btnNameReact]); // Only re-run the effect if btnNameReact changes
+
+  const data = useContext(UserContext);
+  console.log(data);
 
   return (
     <div className="bg-yellow-500 text-white py-4 px-8 flex flex-col md:flex-row justify-between items-center">
@@ -62,6 +66,7 @@ const Header = () => {
             {btnNameReact}
           </button>
         </li>
+        <li className="font-bold">{data}</li>
       </ul>
     </div>
   );
