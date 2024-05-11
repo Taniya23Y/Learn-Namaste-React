@@ -23,7 +23,7 @@ class UserClass extends React.Component {
   async componentDidMount() {
     const data = await fetch("https://api.github.com/users/Taniya23Y");
     const json = await data.json();
-    console.log(json);
+    // console.log(json);
 
     this.setState({
       userInfo: json,
@@ -33,13 +33,13 @@ class UserClass extends React.Component {
   // The componentDidUpdate() method is a React lifecycle method that is invoked immediately after a component's updates are flushed to the DOM.
   // It is invoked immediately after updating occurs and not before. It receives two arguments: the previous props and the previous state.
   componentDidUpdate() {
-    console.log("component Did Update called");
+    // console.log("component Did Update called");
   }
 
   // unmounting refers to the process of removing a component from the DOM. This is the opposite of mounting, which is the process of adding a component to the DOM.
   // When a component is unmounted, it is no longer part of the app's UI, and its resources are cleaned up to prevent memory leaks.
   componentWillUnmount() {
-    console.log("component Will Unmount called");
+    // console.log("component Will Unmount called");
   }
 
   render() {

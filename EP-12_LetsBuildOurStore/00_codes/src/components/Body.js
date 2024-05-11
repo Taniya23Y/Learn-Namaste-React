@@ -17,7 +17,7 @@ const Body = () => {
 
   const RestaurantCardIsOpen = IsOpenLabel(RestaurantCard);
 
-  console.log("body Rendered", listOfRestaurants);
+  // console.log("body Rendered", listOfRestaurants);
 
   useEffect(() => {
     fetchData();

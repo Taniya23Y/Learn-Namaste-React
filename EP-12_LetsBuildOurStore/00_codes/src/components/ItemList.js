@@ -1,6 +1,14 @@
+import { useDispatch } from "react-redux";
 import { CDN_URL } from "../utils/constants";
+import { addItem, clearCart, removeItem } from "../utils/cartSlice";
 
 const ItemList = ({ items }) => {
+  const dispatch = useDispatch();
+  const handleAddItem = (item) => {
+    // dispatch an action
+    dispatch(addItem(item));
+  };
+
   return (
     <div>
       {items.map((item) => (
@@ -30,7 +38,10 @@ const ItemList = ({ items }) => {
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gray bg-opacity-80 flex justify-center items-center">
               {/* <button className=" bg-white hover:bg-orange-500 text-black font-bold p-2 rounded-md shadow-md  cursor-pointer"> */}
-              <button className=" bg-white text-orange-500 hover:bg-orange-500 hover:text-white font-bold p-2 px-6 rounded-md absolute shadow-md left-[50%] -bottom-5 -translate-x-[50%]">
+              <button
+                className=" bg-white text-orange-500 hover:bg-orange-500 hover:text-white font-bold p-2 px-6 rounded-md absolute shadow-md left-[50%] -bottom-5 -translate-x-[50%]"
+                onClick={() => handleAddItem(item)}
+              >
                 ADD +
               </button>
             </div>

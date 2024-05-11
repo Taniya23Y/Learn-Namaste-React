@@ -10,3 +10,14 @@
 - Explain Slice.
 - Explain Selector.
 - Explain createSlice and the configuration it takes.
+
+...
+
+# Redux Toolkit
+
+- Install redux @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our app
+- create a (cartSlice)
+- dispatch(action)
+- Selector
