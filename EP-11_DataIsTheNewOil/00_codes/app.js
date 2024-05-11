@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
@@ -7,6 +7,7 @@ import Error from "./src/components/Error";
 import RestaurantMenu from "./src/components/RestaurantMenu";
 import Footer from "./src/components/Footer";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import UserContext from "./src/utils/UserContext";
 
 // Chunking
 // Code Splitting
@@ -20,14 +21,26 @@ const Grocery = lazy(() => import("./src/components/Grocery"));
 const currYear = new Date().getFullYear();
 
 const AppLayout = () => {
+  const [userName, setUserName] = useState();
+
+  // authentication
+  useEffect(() => {
+    // Make a API call and send the username and password
+    const data = {
+      name: "Taniya Yadav",
+    };
+    setUserName(data.name);
+  }, []);
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-grow">
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
+    <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-grow">
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
+    </UserContext.Provider>
   );
 };
 

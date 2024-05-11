@@ -1,9 +1,10 @@
 import RestaurantCard, { IsOpenLabel } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
-import { useState, useEffect } from "react";
+import { useState, useEffect, UseContext, useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { FaSearch } from "react-icons/fa";
+import UserContext from "../utils/UserContext";
 
 // AppBody
 const Body = () => {
@@ -12,6 +13,7 @@ const Body = () => {
     []
   );
   const [searchText, setSearchText] = useState("");
+  const { loggedInUser, setUserName } = useContext(UserContext);
 
   const RestaurantCardIsOpen = IsOpenLabel(RestaurantCard);
 
@@ -89,7 +91,17 @@ const Body = () => {
         >
           Top Rated Restaurants
         </button>
+        <div className="search mb-4 md:mb-0 flex items-center">
+          <label htmlFor="">userName: </label>
+          <input
+            type="text"
+            className="border-black border"
+            value={loggedInUser}
+            onChange={(e) => setUserName(e.target.value)}
+          />
+        </div>
       </div>
+
       <div className="RestaurantContainer px-4 py-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
         {listOfRestaurants.map((restaurant, index) => (
           <Link

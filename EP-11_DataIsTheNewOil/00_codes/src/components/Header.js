@@ -15,8 +15,7 @@ const Header = () => {
     // You can put any side effects here
   }, [btnNameReact]); // Only re-run the effect if btnNameReact changes
 
-  const data = useContext(UserContext);
-  console.log(data);
+  const { loggedInUser } = useContext(UserContext);
 
   return (
     <div className="bg-yellow-500 text-white py-4 px-8 flex flex-col md:flex-row justify-between items-center">
@@ -66,7 +65,7 @@ const Header = () => {
             {btnNameReact}
           </button>
         </li>
-        <li className="font-bold">{data}</li>
+        <li className="font-bold">{loggedInUser}</li>
       </ul>
     </div>
   );
