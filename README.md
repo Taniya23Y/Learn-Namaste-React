@@ -118,7 +118,7 @@ In this folder, all the issues, that the students were facing because of CORS, h
 - React-Redux
 - Actions, Reducers
 
-## 🧪 Episode-13 | Time for Test
+## 🧪 [Episode-13 | Time for Test](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-13_TimeForTest)
 
 **Comprehensive testing with Jest and React Testing Library.**
 
@@ -126,15 +126,15 @@ In this folder, all the issues, that the students were facing because of CORS, h
 - Jest, React Testing Library
 - Unit Testing principles
 
-## 🎬 Episode-14 | NetflixGPT - The Beginning
+## 🎬 [Episode-14 | NetflixGPT - The Beginning](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-14_NetflixGPT_TheBeginning)
 
 **A new adventure begins as we embark on creating a Netflix clone with GPT-3 integration.**
 
-## 🎬 Episode-15 | NetflixGPT - Building the Core
+## 🎬 [Episode-15 | NetflixGPT - Building the Core](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-15_NetflixGPT_BuildingtheCore)
 
 **We dive into the core of our NetflixGPT project, enhancing its functionality and interactivity.**
 
-## 🎬 Episode-16 | NetflixGPT - Wrapping Up
+## 🎬 [Episode-16 | NetflixGPT - Wrapping Up](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-16_NetflixGPT_WrappingUp)
 
 **We wrap up our NetflixGPT project, applying the finishing touches and preparing for deployment.**
 
