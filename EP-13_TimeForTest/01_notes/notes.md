@@ -11,11 +11,10 @@
 
 # Types of testing (developer)
 
-- Unit Testing - Testing One Component in Isolation || means separately
-- Integration Testing - Testing Integration of Components
-- End to End Testing (or) e2e Testing - End-to-end testing verifies that all components of a system can run under real-world scenarios. The goal of this form of testing is to simulate a user experience from start to finish. E2E testing can find software dependencies while also validating the system under test, its data integrity and integrations.
+- (1). Unit Testing - Testing One Component in Isolation || means separately
+- (2). Integration Testing - Testing Integration of Components
+- (3). End to End Testing (or) e2e Testing - End-to-end testing verifies that all components of a system can run under real-world scenarios. The goal of this form of testing is to simulate a user experience from start to finish. E2E testing can find software dependencies while also validating the system under test, its data integrity and integrations.
 
-...
 ...
 
 # Tailwind installation
