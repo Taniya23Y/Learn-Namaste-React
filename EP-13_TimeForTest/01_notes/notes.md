@@ -71,10 +71,17 @@ module.exports = {
 
 # Setting up Testing in our app
 
-- Install React Testing Library
-- Install Jest
-- Install Babel Dependencies
-- Configure Babel
+- Install React Testing Library `npm i -D @testing-library/react`
+- Install Jest `npm install -D jest`
+- Install Babel Dependencies `npm install --save-dev babel-jest @babel/core @babel/preset-env`
+- Configure Babel in `babel.config.js`
+
+```
+module.exports = {
+  presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+};
+```
+
 - Configure Parcel Config File to disable default Babel transpilation
 - Jest - `npx jest --init`
 - Install jsdom library
