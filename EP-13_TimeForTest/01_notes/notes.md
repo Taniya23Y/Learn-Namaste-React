@@ -82,9 +82,42 @@ module.exports = {
 };
 ```
 
+- make a file `make a file => .parcelrc`
+
+```
+{
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.{js,mjs,jsx,cjs,ts,tsx}": [
+      "@parcel/transformer-js",
+      "@parcel/transformer-react-refresh-wrap"
+    ]
+  }
+}
+```
+
 - Configure Parcel Config File to disable default Babel transpilation
+- run jest => `npm run test`
 - Jest - `npx jest --init`
+
+```
+npx jest --init
+
+The following questions will help Jest to create a suitable configuration for your project
+
+√ Would you like to use Typescript for the configuration file? ... no
+√ Choose the test environment that will be used for testing » jsdom (browser-like)
+√ Do you want Jest to add coverage reports? ... yes
+√ Which provider should be used to instrument code for coverage? » babel
+√ Automatically clear mock calls, instances, contexts and results before every test? ... yes
+```
+
 - Install jsdom library
+
+```
+npm install --save-dev jest-environment-jsdom
+```
+
 - Install @babel/preset-react - to make JSX work in test cases
 - Include @babel/preset-react inside my babel config
 - npm i -D @testing-library/jest-dom

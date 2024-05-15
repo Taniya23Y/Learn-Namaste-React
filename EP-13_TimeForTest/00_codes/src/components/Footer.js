@@ -2,10 +2,7 @@ import { LOGO_URL } from "../utils/constants";
 import { MdMarkEmailRead } from "react-icons/md";
 import { IoIosContact } from "react-icons/io";
 import { MdPlace } from "react-icons/md";
-import { FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram } from "react-icons/fa"; // Combine imports
 
 const Footer = () => {
   const currYear = new Date().getFullYear();
