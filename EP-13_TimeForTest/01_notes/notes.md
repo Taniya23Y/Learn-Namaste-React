@@ -118,6 +118,6 @@ The following questions will help Jest to create a suitable configuration for yo
 npm install --save-dev jest-environment-jsdom
 ```
 
-- Install @babel/preset-react - to make JSX work in test cases
+- Install @babel/preset-react - to make JSX work in test cases `npm i -D  @babel/preset-react`
 - Include @babel/preset-react inside my babel config
-- npm i -D @testing-library/jest-dom
+- `npm i -D @testing-library/jest-dom`
