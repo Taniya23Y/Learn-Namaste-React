@@ -158,17 +158,17 @@ Dive deep into the world of React Hooks, exploring useMemo, useCallback, and use
 
 ## 📝 Assignments
 
-- Assignment 01 - Inception
-- Assignment 02 - Igniting our App
-- Assignment 03 - Laying the Foundation
-- Assignment 04 - Talk is cheap, show me the code!
-- Assignment 05 - Let's get Hooked!
-- Assignment 06 - Exploring the world
-- Assignment 07 - Finding the Path
-- Assignment 08 - Let's get Classy
-- Assignment 09 - Optimizing our App
-- Assignment 10 - Jo dikhta hai vo bikta hai
-- Assignment 11 - Data is the new Oil
-- Assignment 12 - Let's Build our Store
-- Assignment 13 - Time for the test
+- [Assignment 01 - Inception](https://github.com/Taniya23Y/Learn-Namaste-React/blob/main/EP-01_Inception/02_assignment/assignment.md)
+- [Assignment 02 - Igniting our App](https://github.com/Taniya23Y/Learn-Namaste-React/blob/main/EP-02_IgnitingOurApp/02_assignments/assignment.md)
+- [Assignment 03 - Laying the Foundation](https://github.com/Taniya23Y/Learn-Namaste-React/blob/main/EP-03_LayingTheFoundation/02_assignments/assignment.md)
+- [Assignment 04 - Talk is cheap, show me the code!](https://github.com/Taniya23Y/Learn-Namaste-React/blob/main/EP-04_TalkInCheap_ShowMeTheCode/02_assignments/assignments.md)
+- [Assignment 05 - Let's get Hooked!](https://github.com/Taniya23Y/Learn-Namaste-React/blob/main/EP-05_LetsGetHooked/02_assignments/assignments.md)
+- [Assignment 06 - Exploring the world](https://github.com/Taniya23Y/Learn-Namaste-React/blob/main/EP-06_ExploringTheWorld/02_assignments/assignments.md)
+- [Assignment 07 - Finding the Path](https://github.com/Taniya23Y/Learn-Namaste-React/blob/main/EP-07_FindingThePath/02_assignments/assignments.md)
+- [Assignment 08 - Let's get Classy](https://github.com/Taniya23Y/Learn-Namaste-React/blob/main/EP-08_LetsGetClassy/02_assignments/assignments.md)
+- [Assignment 09 - Optimizing our App](https://github.com/Taniya23Y/Learn-Namaste-React/blob/main/EP-09_OptimizingOurApp/02_assignments/assignments.md)
+- [Assignment 10 - Jo dikhta hai vo bikta hai](https://github.com/Taniya23Y/Learn-Namaste-React/blob/main/EP-10_JoDikhtaHai_VoBiktaHai/02_assignments/assignments.md)
+- [Assignment 11 - Data is the new Oil](https://github.com/Taniya23Y/Learn-Namaste-React/blob/main/EP-11_DataIsTheNewOil/02_assignments/assignments.md)
+- [Assignment 12 - Let's Build our Store](https://github.com/Taniya23Y/Learn-Namaste-React/blob/main/EP-12_LetsBuildOurStore/02_assignments/assignment.md)
+- [Assignment 13 - Time for the test](https://github.com/Taniya23Y/Learn-Namaste-React/blob/main/EP-13_TimeForTest/02_assignments/assignments.md)
 
