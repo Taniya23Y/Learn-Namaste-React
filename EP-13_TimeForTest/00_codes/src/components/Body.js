@@ -71,6 +71,7 @@ const Body = () => {
       <div className="filter bg-gray-200 py-4 px-8 flex flex-col md:flex-row justify-center items-center gap-2">
         <div className="search mb-4 md:mb-0 flex items-center ">
           <input
+            data-testid="searchInput"
             type="text"
             className="search-box p-3 border border-gray-300 rounded-lg"
             placeholder="Search restaurant..."
