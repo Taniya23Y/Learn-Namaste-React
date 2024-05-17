@@ -3,7 +3,7 @@
 - `npx create-react-app netflix-gpt`
 
 - remove `index.css code`
-- remove `App.test.js` file
+- remove `App.test.js` and `App.css` file
 - remove `App.css code`
 - remove `logo.svg`
 
@@ -32,3 +32,33 @@ module.exports = {
 @tailwind components;
 @tailwind utilities;
 ```
+
+## Create a folders in src
+
+- components
+  - Login.js
+  - Header.js
+  - Body.js
+  - Browse.js
+- utils
+
+## install => react-router-dom in react App
+
+- `npm i -D react-router-dom`
+
+## After installation of react router
+
+- create routing in Body.js
+  ```
+   const appRouter = createBrowseRouter([
+    {
+        path: "/",
+        element: <Body />
+    }
+   ]);
+  ```
+  after this import a router provider for routing `import {RouterProvider} from "react-router-dom"`
+
+## Built a login form
+
+- Login.js

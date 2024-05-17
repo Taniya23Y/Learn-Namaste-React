@@ -38,6 +38,16 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ...
 
+# Netflix-GPT
+
+- create React app
+- Configure Tailwindcss
+- Header
+- Login form
+- Sign Up form
+
+...
+
 # Features
 
 - Login/Sign Up
