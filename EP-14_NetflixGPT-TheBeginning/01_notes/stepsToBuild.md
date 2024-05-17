@@ -1,6 +1,6 @@
 ## create react app
 
-- `npx create-react-app netflix-gpt`
+- `npx create-react-app netflixgpt`
 
 - remove `index.css code`
 - remove `App.test.js` and `App.css` file
@@ -62,3 +62,6 @@ module.exports = {
 ## Built a login form
 
 - Login.js
+- Toggle SignIn/SignUp Page
+- Form Validation
+- add firebase authentication `npm install firebase`

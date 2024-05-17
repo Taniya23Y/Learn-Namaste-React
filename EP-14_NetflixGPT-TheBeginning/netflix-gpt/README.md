@@ -43,8 +43,11 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - create React app
 - Configure Tailwindcss
 - Header
+- Routing of App
 - Login form
 - Sign Up form
+- Form Validation
+- useRef Hook
 
 ...
 
