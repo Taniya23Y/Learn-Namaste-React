@@ -1,6 +1,8 @@
 import Body from "./components/Body";
 import { getDatabase, ref, set } from "firebase/database";
 import { app } from "../src/utils/Firebase";
+import appStore from "./utils/appSlice";
+import { Provider } from "react-redux";
 
 const db = getDatabase(app);
 
@@ -13,10 +15,9 @@ function App() {
     });
   };
   return (
-    <div>
+    <Provider store={appStore}>
       <Body />
-      <button onClick={putData}>Put Data</button>
-    </div>
+    </Provider>
   );
 }
 

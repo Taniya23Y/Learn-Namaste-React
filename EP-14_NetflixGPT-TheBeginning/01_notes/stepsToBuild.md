@@ -130,3 +130,8 @@ module.exports = {
 - after Toggle SignIn/SignUp Page, Form Validation , add firebase authentication write logic for sign in and sign up first need to import `import {getAuth, createUserWithEmailAndPassword} from "firebase/auth"` in Login.js file
 
 - install it `npm i -D @reduxjs/toolkit` and import redux toolkit and install `npm i react-redux`
+- Implement Sign In User Api
+- Created Redux Store with userSlice
+- Get The Currently Signed-in User by firebase docs (Manage Users) it added to redux store `onAuthChange`
+- write code for Sign-out
+- Update the user profile `add name also`

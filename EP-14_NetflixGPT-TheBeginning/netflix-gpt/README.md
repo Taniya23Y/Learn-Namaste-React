@@ -51,6 +51,11 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - Firebase Setup
 - Deploying our app to production
 - Create Sign Up user account
+- Implement Sign In User Api
+- Created Redux Store with userSlice
+- Implemented Sign out feature
+- Update profile
+- Fetch from TMDB Movies
 
 ...
 
