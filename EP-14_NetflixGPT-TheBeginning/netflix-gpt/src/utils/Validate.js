@@ -1,6 +1,9 @@
-export const checkValidData = (fullName, email, password) => {
-  // is Full name or username valid
-  const isFullNameValid = /\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+/.test(fullName);
+export const checkValidData = (name, email, password, isSignInForm) => {
+  // Validate only if it is a Sign Up form and the name is provided
+  if (!isSignInForm && name) {
+    const isFullNameValid = /\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+/.test(name);
+    if (!isFullNameValid) return "Full Name is not valid";
+  }
   // is email valid
   const isEmailValid = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/.test(
     email
@@ -8,7 +11,6 @@ export const checkValidData = (fullName, email, password) => {
   const isPasswordValid =
     /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/.test(password);
 
-  if (!isFullNameValid) return "Full Name Id is not Valid";
   if (!isEmailValid) return "Email Id is not Valid";
   if (!isPasswordValid) return "Password is not Valid";
 

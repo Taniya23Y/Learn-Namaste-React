@@ -48,6 +48,9 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - Sign Up form
 - Form Validation
 - useRef Hook
+- Firebase Setup
+- Deploying our app to production
+- Create Sign Up user account
 
 ...
 
