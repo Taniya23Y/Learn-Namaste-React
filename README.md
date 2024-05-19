@@ -126,7 +126,7 @@ In this folder, all the issues, that the students were facing because of CORS, h
 - Jest, React Testing Library
 - Unit Testing principles
 
-## 🎬 [Episode-14 | NetflixGPT - The Beginning](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-14_NetflixGPT_TheBeginning)
+## 🎬 [Episode-14 | NetflixGPT - The Beginning](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-14_NetflixGPT-TheBeginning)
 
 **A new adventure begins as we embark on creating a Netflix clone with GPT-3 integration.**
 
