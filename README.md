@@ -130,11 +130,11 @@ In this folder, all the issues, that the students were facing because of CORS, h
 
 **A new adventure begins as we embark on creating a Netflix clone with GPT-3 integration.**
 
-## 🎬 [Episode-15 | NetflixGPT - Building the Core](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-15_NetflixGPT_BuildingtheCore)
+## 🎬 [Episode-15 | NetflixGPT - Building the Core](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-15_NetflixGPT-BuildingtheCore)
 
 **We dive into the core of our NetflixGPT project, enhancing its functionality and interactivity.**
 
-## 🎬 [Episode-16 | NetflixGPT - Wrapping Up](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-16_NetflixGPT_WrappingUp)
+## 🎬 [Episode-16 | NetflixGPT - Wrapping Up](https://github.com/Taniya23Y/Learn-Namaste-React/tree/main/EP-16_NetflixGPT-WrappingUp)
 
 **We wrap up our NetflixGPT project, applying the finishing touches and preparing for deployment.**
 
