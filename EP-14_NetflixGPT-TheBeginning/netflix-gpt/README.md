@@ -55,6 +55,8 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - Created Redux Store with userSlice
 - Implemented Sign out feature
 - Update profile
+- BugFix: Sign up user displayName and profile picture update
+- BugFix: if the user is not logged in Redirect/browse to Login page and vice-versa
 - Fetch from TMDB Movies
 
 ...
