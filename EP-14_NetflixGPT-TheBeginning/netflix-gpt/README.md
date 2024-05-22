@@ -57,6 +57,10 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - Update profile
 - BugFix: Sign up user displayName and profile picture update
 - BugFix: if the user is not logged in Redirect/browse to Login page and vice-versa
+- Unsubscribed to the onAuthStateChange callback
+- Add hardcoded value to the constants file
+- Register TMDB API & create an app & get access Token
+- Get Data from TMDB
 - Fetch from TMDB Movies
 
 ...

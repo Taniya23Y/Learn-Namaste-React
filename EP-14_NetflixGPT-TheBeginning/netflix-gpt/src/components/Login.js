@@ -10,6 +10,7 @@ import {
 import { auth } from "../utils/Firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { USER_PROFILE } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -56,7 +57,7 @@ const Login = () => {
           //update user profile
           updateProfile(user, {
             displayName: "name.current.value",
-            photoURL: "https://avatars.githubusercontent.com/u/128471154?v=4",
+            photoURL: { USER_PROFILE },
           })
             .then(() => {
               //profile updated

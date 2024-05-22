@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { addUser, removeUser } from "../utils/userSlice";
+import { LOGO, USER_PROFILE } from "../utils/constants";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -20,7 +21,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         const { uid, email, displayName, photoURL } = user;
         // if user is present(sign-in)
@@ -39,18 +40,21 @@ const Header = () => {
         navigate("/");
       }
     });
+
+    // unsubscribe when components unmounts
+    return () => unsubscribe();
   }, []);
 
   return (
     <div className="absolute w-full px-36 py-2 bg-gradient-to-b from-black bg-transparent z-10 flex justify-between">
-      <img className="w-48" src="/Netflix_logo.png" alt="netflix-logo" />
+      <img className="w-48" src={LOGO} alt="netflix-logo" />
       {user && (
         <div className="flex p-4">
           <img
             className="w-12 h-12 "
             // src="/netflix-profile-pictures.jpg"
             // src={user?.photoURl}
-            src={user.photoURL || "/netflix-profile-pictures.jpg"} // Fallback image
+            src={user.photoURL || { USER_PROFILE }} // Fallback image
             alt="user-icon"
           />
           <button
