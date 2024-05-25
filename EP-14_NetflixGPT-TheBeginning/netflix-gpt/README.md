@@ -60,8 +60,14 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - Unsubscribed to the onAuthStateChange callback
 - Add hardcoded value to the constants file
 - Register TMDB API & create an app & get access Token
-- Get Data from TMDB
-- Fetch from TMDB Movies
+- Get Data from TMDB now playing movies list API
+- Custom Hook for Now Playing Movies
+- Updates store with movies Data
+- Planning for MainContainer and secondaryContainer
+- Fetch Data for trailer Video
+- Update Store with Trailer Video Data
+- Embedded the Youtube video and make it autoplay and mute
+- Tailwind Classes to make Main Container Awesome
 
 ...
 
