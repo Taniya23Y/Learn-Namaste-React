@@ -69,6 +69,11 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - Embedded the Youtube video and make it autoplay and mute
 - Tailwind Classes to make Main Container Awesome
 - Build our Secondary Component
+- Build Movie List
+- Build Movie Card
+- TMDB Image CDN
+- Made the Browse page amazing with Tailwind css
+- usePopularMovies, useUpcomingMovies, useTopRatedMovies custom hook
 
 ...
 
