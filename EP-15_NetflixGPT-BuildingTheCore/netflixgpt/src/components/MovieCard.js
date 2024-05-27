@@ -3,8 +3,12 @@ import { IMG_CDN_URL } from "../utils/constants";
 
 const MovieCard = ({ posterPath }) => {
   return (
-    <div className="w-48">
-      <img src={IMG_CDN_URL + posterPath} alt="poster_img from TMDB" />
+    <div className="min-w-[170px]">
+      <img
+        alt="poster_img from TMDB"
+        src={IMG_CDN_URL + posterPath}
+        className="w-full h-full object-cover cursor-pointer rounded-lg"
+      />
     </div>
   );
 };
