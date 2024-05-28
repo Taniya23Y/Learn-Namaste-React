@@ -2,7 +2,7 @@ import React from "react";
 import MovieCard from "./MovieCard";
 
 const MovieList = ({ title, movies }) => {
-  console.log(movies);
+  // console.log(movies);
 
   // Check if movies is null or undefined and set it to an empty array if so
   if (!movies) {

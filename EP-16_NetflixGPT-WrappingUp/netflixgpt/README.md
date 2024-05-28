@@ -75,6 +75,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - Made the Browse page amazing with Tailwind css
 - usePopularMovies, useUpcomingMovies, useTopRatedMovies custom hook
 - GPT Search Feature
+- Building Multi language Page
 
 ...
 

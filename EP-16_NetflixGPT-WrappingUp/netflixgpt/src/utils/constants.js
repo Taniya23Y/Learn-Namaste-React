@@ -14,3 +14,11 @@ export const API_OPTIONS = {
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500/";
 
 export const BG_IMG = "netflix-bg-cover.jpg";
+
+export const supportedLanguages = [
+  { identifier: "En", name: "English" },
+  { identifier: "hindi", name: "Hindi" },
+  { identifier: "spanish", name: "Spanish" },
+  { identifier: "french", name: "French" },
+  { identifier: "turkish", name: "Turkish" },
+];
