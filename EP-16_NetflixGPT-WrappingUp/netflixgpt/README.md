@@ -74,6 +74,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - TMDB Image CDN
 - Made the Browse page amazing with Tailwind css
 - usePopularMovies, useUpcomingMovies, useTopRatedMovies custom hook
+- GPT Search Feature
 
 ...
 
