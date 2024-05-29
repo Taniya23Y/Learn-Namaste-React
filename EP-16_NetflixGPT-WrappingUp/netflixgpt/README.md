@@ -76,6 +76,10 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - usePopularMovies, useUpcomingMovies, useTopRatedMovies custom hook
 - GPT Search Feature
 - Building Multi language Page
+- Integrate GPT API's(get openAi key)
+- go to `https://openai.com` then to go `https://platform.openai.com`
+- create your api on `https://platform.openai.com/api-keys`
+- install `npm install --save openai`
 
 ...
 

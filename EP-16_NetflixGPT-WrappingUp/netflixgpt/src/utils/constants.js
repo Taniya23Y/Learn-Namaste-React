@@ -22,3 +22,7 @@ export const supportedLanguages = [
   { identifier: "french", name: "French" },
   { identifier: "turkish", name: "Turkish" },
 ];
+
+export const OPENAI_KEY = "";
+
+export const TMDB_SEARCH = "https://api.themoviedb.org/3/search/movie";
