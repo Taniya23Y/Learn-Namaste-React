@@ -6,8 +6,7 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmYjU1NzVhY2Q1YThjOWMwN2U2ZjNmOWMwYWQ2NGRjMyIsInN1YiI6IjY2NGQ5ZjgzNDY2NzQ0MGY4OTM0OThhNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.MpQHnOwhkBxvYUiv_O3B7GFquvg0k5_juZe5wwhylH0",
+    Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -23,6 +22,6 @@ export const supportedLanguages = [
   { identifier: "turkish", name: "Turkish" },
 ];
 
-export const OPENAI_KEY = "";
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
 
 export const TMDB_SEARCH = "https://api.themoviedb.org/3/search/movie";
