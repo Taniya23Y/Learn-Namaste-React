@@ -60,7 +60,7 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 w-full px-7 py-1 bg-gradient-to-b from-black bg-transparent z-50 flex items-center justify-between  ">
+    <div className="fixed top-0 w-full px-7 py-1 bg-gradient-to-b from-black bg-transparent z-50 flex flex-col md:flex-row items-center justify-between">
       <img className="w-48" src={LOGO} alt="netflix-logo" />
       {user && (
         <div className="flex p-4 items-center">
