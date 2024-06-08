@@ -112,33 +112,33 @@ const Login = () => {
           alt="background-cover"
         />
       </div>
-      <div className="relative flex flex-1 items-center justify-center sm:pt-[5%] p-4">
+      <div className="relative flex flex-1 items-center justify-center p-4 sm:pt-[10%] sm:px-[5%] lg:px-[15%] xl:px-[20%]">
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="w-full max-w-lg bg-black p-6 sm:p-10 rounded-lg bg-opacity-80 shadow-lg"
+          className="w-full max-w-lg bg-black p-8 sm:p-7 rounded-lg bg-opacity-80 shadow-lg "
         >
-          <h1 className="font-bold text-2xl sm:text-3xl py-4 text-center text-white">
+          <h1 className="font-bold text-2xl sm:text-3xl py-2 text-center text-red-500">
             {isSignInForm ? "Sign In" : "Sign Up"}
           </h1>
           {!isSignInForm && (
             <input
               ref={name}
-              type="text text-white font-normal text-xl"
+              type="text"
               placeholder="Full Name"
-              className="p-3 sm:p-4 my-3 w-full bg-gray-700 rounded-md text-white font-normal text-xl"
+              className="p-3 sm:p-3 my-3 w-full bg-gray-700 rounded-md text-white font-normal text-xl"
             />
           )}
           <input
             ref={email}
-            type="email text-white font-bold text-xl"
+            type="email"
             placeholder="Email Address"
-            className="p-3 sm:p-4 my-3 w-full bg-gray-700 rounded-md text-white font-normal text-xl"
+            className="p-3 sm:p-3 my-3 w-full bg-gray-700 rounded-md text-white font-normal text-xl"
           />
           <input
             ref={password}
-            type="password text-white font-bold text-xl"
+            type="password"
             placeholder="Password"
-            className="p-3 sm:p-4 my-3 w-full bg-gray-700 rounded-md text-white font-normal text-xl"
+            className="p-3 sm:p-3 my-3 w-full bg-gray-700 rounded-md text-white font-normal text-xl"
           />
           {errorMessage && (
             <p className="text-red-500 font-semibold text-sm py-2 text-center">
@@ -146,14 +146,14 @@ const Login = () => {
             </p>
           )}
           <button
-            className="p-3 sm:p-4 my-4 bg-red-700 text-white w-full rounded-md hover:bg-red-800 transition duration-300"
+            className="p-3 sm:p-3 my-3 bg-red-700 text-white w-full rounded-md hover:bg-red-800 transition duration-300"
             onClick={handleButtonClick}
             type="submit"
           >
             {isSignInForm ? "Sign In" : "Sign Up"}
           </button>
           <p
-            className="text-center py-4 cursor-pointer underline text-white font-bold text-2xl"
+            className="text-left py-2 cursor-pointer underline text-white font-normal text-base sm:text-lg"
             onClick={toggleSignInForm}
           >
             {isSignInForm

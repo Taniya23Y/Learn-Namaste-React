@@ -80,8 +80,16 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - go to `https://openai.com` then to go `https://platform.openai.com`
 - create your api on `https://platform.openai.com/api-keys`
 - install `npm install --save openai`
-
-...
+- Get Open AI Api Key
+- Gpt Search API Call
+- fetched Gpt movie suggestion from TMDB
+- created Gpt Slice added data
+- Reused MovieList Component to make movie suggestion container
+- Memoization
+- Added .env file
+- Adding .env file to gitignore
+- Made our site responsive
+  ...
 
 # Features
 
