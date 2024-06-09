@@ -6,7 +6,8 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmYjU1NzVhY2Q1YThjOWMwN2U2ZjNmOWMwYWQ2NGRjMyIsInN1YiI6IjY2NGQ5ZjgzNDY2NzQ0MGY4OTM0OThhNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.MpQHnOwhkBxvYUiv_O3B7GFquvg0k5_juZe5wwhylH0",
   },
 };
 
@@ -25,3 +26,6 @@ export const supportedLanguages = [
 export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
 
 export const TMDB_SEARCH = "https://api.themoviedb.org/3/search/movie";
+export const POSTER_BG = `poster-bg.jpeg`;
+export const NO_POSTER = `no_movie_poster.png`;
+export const BACKDROP = `blur.png`;
